@@ -1,0 +1,232 @@
+html {
+	font-family: Georgia, Verdana, Helvetica, Arial;
+	font-size:20px;
+}
+
+* body {
+  background: url("../images/fondo1.jpg") no-repeat fixed center #67EBFA;
+  background-size: 100% 100%;
+  background-size: cover;
+}
+
+h1{
+	color:black;
+	background: #67EBFA;
+	font-family: "Lucida Handwriting";
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	width: 90%;
+	height:10%;
+	margin-top: 100px; /*No quitar margin*/
+	margin-left:50px;
+	margin-right:50px;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	border: 5px dashed #3B55E5;
+	display: block;
+	
+}
+
+#subtitulo p {
+	color:black;
+	background: #B28DFF;
+	width: 40%;
+	text-align:center;
+	font-family: "Lucida Handwriting";
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 50px;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#logo img{
+	width:70px;
+	height:70px;
+	display: block;
+	margin: 10px;
+}
+
+h2 {
+	color: black;
+	background-color:#85E3FF;
+	text-decoration: Underline #B28DFF;
+	font-family: "Lucida Handwriting";
+	float:center;
+	width: 50%;
+	text-align: center;
+	margin-top: 40%;
+	margin-bottom: 2em;
+	margin-left: 25%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+#imagenInicio img {
+	width:"870px";
+	height:"400px";
+	font-size: 25px;
+	border: 5px dashed #FE86C1;
+	border-radius: 5px 5px 5px 5px;
+	padding: 20px;
+	background-color: rgba(255, 202, 248, 0.5);
+	display: inline-block;
+	
+}
+
+h3 {
+	color: black;
+	background-color:#33f7b2;
+	font-family: "Lucida Handwriting";
+	float:center;
+	width: 50%;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	
+}
+
+p {
+	margin-top: 1em;
+	margin-left:50px;
+}
+
+.footer {
+	color:black;
+	background-color:#33f7b2;
+	font-family: "Lucida Handwriting";
+	font-size: 25px;
+	font-weight: bold;
+	float:right;
+	width: 50%;
+	height:auto;
+	padding:5px;
+	text-align: center;
+	margin-top: 2em;
+	margin-right: 20px;
+	margin-left: 700px;
+}
+
+/*Menú de mi aplicación web*/
+
+#menu {
+	padding-top:18px;
+	margin-left:50px;
+	margin-bottom:4em;
+	float:left;
+	width:39%;
+	height: auto;
+	background-color:#D5AAFF;
+	background-color: rgba(197, 140, 255, 0.5);
+	border-radius: 0px 0px 10px 10px;
+	font-weight:bold;
+	display: block;
+	border: 5px dashed #3B55E5;
+	position:relative;
+	
+}
+
+#menu ul a:hover
+{
+	background:#67EBFA;
+	color: #613CD4;
+}
+
+#menu ul a
+{
+	display:block;
+	font-family:'sofiapro-light';
+	font-size:1em; 
+	padding: 3px;
+}
+
+
+/*formularios de mi apliación web*/
+
+form{
+	background-color:#C4FAF8;
+	width:50%;
+	height:auto;
+}
+
+#deleteform  form{
+	background-color:#C4FAF8;
+	width:50%;
+	height:50%;
+	margin-left:25%;
+	margin-right:50px;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	border: 5px dashed #3B55E5;
+	display: block;
+}
+
+#editform  form{
+	background-color:#C4FAF8;
+	width:50%;
+	height:50%;
+	margin-left:25%;
+	margin-top: 35%;
+	margin-right:50px;
+	padding: 10px;
+	border-radius: 10px 10px 10px 10px;
+	border: 5px dashed #3B55E5;
+	display: block;
+}
+
+#datosCliente form{
+	background-color:#C4FAF8;
+	width:50%;
+	height:auto;
+
+}
+
+input[type=text],input[type=password],input[type=date] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: Georgia, Verdana, "Courier New", monospace;
+}
+input[type=text]:focus,input[type=password]:focus {
+    background-color: #67EBFA;
+}
+input[type=text],input[type=button]:hover { /*cursor pasa por encima*/
+  background-color: #67EBFA;
+}
+
+input[type=button]{
+  background-color: #CE97FB;
+  border:4px solid #B28DFF;
+  color: black; /*color de letra*/
+  padding: 10px 32px;
+  margin: 8px 8px;
+  cursor: pointer;
+  width:35%;
+  font-family: Georgia, Verdana, "Courier New";
+  font-size: 15px;
+  text-align: center;
+}
+
+input[type=submit] {
+  background-color: #CE97FB;
+  border:2px solid #B28DFF;
+  color: black; /*color de letra*/
+  padding: 16px 32px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width:90%;
+  font-family: Georgia, Verdana, "Courier New";
+  font-size: 20px;
+}
+
+select{
+     height: 30px;
+     padding: 5px;
+     width: 90%;
+}
+
+img .imagenInicio
+{
+	height: 400px;
+	width: 600px;
+}

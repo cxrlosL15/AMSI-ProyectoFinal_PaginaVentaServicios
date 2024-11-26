@@ -1,0 +1,122 @@
+html{
+	/*background: #ffffff;
+	font-family:'Merriweather', 'Roboto Slab', serif;
+	color: #050505;
+}
+
+body {
+	margin: 0px;
+	background-color: #ffffff;
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; /*vertical horizontal
+}
+
+h1{
+	
+	color:#050505; /*color letra
+}
+
+h2{
+	color:#8C8ACE; /*color letra
+}
+
+h3{
+	/*color:#050505; /*color letra*/
+	/*font-size: 16px;
+}
+
+form{
+	background-color: #ffffff;
+	padding: 2em;
+	padding-bottom: 3em;
+	border-radius: 16px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 600px;
+}
+
+form fieldset{
+	padding: 2em;
+}
+
+input[type=text],input[type=password]{
+	width: 100%;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border-radius: 12px;
+	box-sizing: border-box;
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	color:#050505;
+	background-color:#ffffff;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+	background-color:#2C3E50;
+}
+
+input[type=text]:hover {/*cursor pasa por encima
+	background-color:#242424; 
+}
+
+input[type=submit] {
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	background: url("../../images/botonfondo.jpg");
+	border-radius: 12px;
+	border: none;
+	color: 050505; /*color de letra
+	padding: 16px 32px;		
+	text-decoration: none;	
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 2px;
+	cursor: pointer;
+	width:100%;
+	overflow: hidden;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+input[type=submit]:hover {
+    transform: translateY(-4px);
+}
+
+.animate{
+      animation: grow .5s linear;
+}
+
+#loginProcess{
+	background-color: #050505;
+	background-position:center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#buttonProcess{
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	background: url("../images/botonfondo.jpg");
+	border-radius: 12px;
+	border: none;
+	color: 050505; /*color de letra
+	padding: 16px 32px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px 2px;
+	cursor: pointer;
+	width:17%;
+	overflow: hidden;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+#buttonProcess:hover {
+    transform: translateY(-4px);
+}
+
+/*Hide all except first fieldset
+form fieldset:not(:first-of-type) {
+	display: none;*/
+}

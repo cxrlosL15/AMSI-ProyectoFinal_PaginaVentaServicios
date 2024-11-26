@@ -1,0 +1,53 @@
+table{
+	border: 1px solid rgb(0, 0, 0);
+	border-collapse: collapse;
+	margin: 0;
+	padding: 1.5em;
+	width: 80%;
+	table-layout: fixed;
+	margin: auto;
+}
+
+table caption {
+	font-family: 'Poppins', sans-serif;
+	margin: .5em 0 .75em;
+}
+
+table tr{
+	background-color: #FDFEFE;
+	border: 1px solid #ddd;
+	padding: 0.35em;
+}
+
+table th{
+	background: url("../../images/botonfondo.jpg");
+	color:#fff;
+	padding: 0.35em;
+}
+
+tr:hover{background-color: #f2f2f2}
+
+table th, table td {
+	padding: 1 em;
+	text-align: center;
+}
+
+table td {
+  padding: .625em;
+  text-align: center;
+  word-wrap: break-word;
+  color: #000;
+}
+
+table td .anchoColumna{
+	width:150px;
+}
+
+table td img{
+  max-width: 70px;
+}
+
+#imagenMembresiaTabla{
+	max-width: 250px;
+	height: 100%;
+  }

@@ -1,0 +1,50 @@
+/*Estilo de mis tablas*/
+
+table {
+  border: 1px solid #F3FFE3;
+  border-radius: 5px 5px 5px 5px;
+  border-collapse: collapse;
+  margin: 0;
+  margin-left:50px;
+  margin-right:50px;
+  padding: 0;
+  width: 92%;
+  
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #F3FFE3;
+  border: 1px solid #black;
+  padding: .35em;
+}
+
+table th{
+  background-color: #33f7b2;
+  color:black;
+}
+
+tr:hover{background-color: #AFF8DB}
+
+th:hover{background-color: #67ebfa}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+}
+
+table td {
+	width:150px;
+}
+table td img{
+  max-width: 130px;
+  max-height:1200px;
+}
+
+

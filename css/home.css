@@ -1,0 +1,399 @@
+
+#textoHome{
+		background: white;
+		animation:fanimado 10s infinite;
+		background-size: 500%;/*vertical horizontal*/
+		animation-name: fanimado;
+		animation-iteration-count:infinite;
+		animation-duration:10s
+		
+}
+#textogale{
+	color:#fff;
+	font-weight:300;
+	font-size:30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+*{
+	margin:0;
+	box-sizing: border box;
+}
+
+.galeria{
+	margin-top: 400px;
+	font-family: 'Roboto Slab';
+}
+
+.galeria h1{
+	text-align: center;
+	margin:20px 0 15px 0;
+	font-weight:300;
+	color: white;
+	font-family: 'Merriweather', serif;
+}
+
+.linea{
+	border-top: 5px solid #ffffff;
+	margin-bottom:150px ;
+}
+.contenedor-imagenes{
+	display: flex;
+	width: 85%;
+	margin:auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-radius:3px;
+
+	
+}
+
+.contenedor-imagenes .imagen{
+	height: 300px;
+	margin-bottom:30px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+	
+	position: relative;
+	width:32%;
+}
+.imagen img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.overlay{
+	
+	background:  #C39D91;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height: 0;
+	transition: .5s ease;
+	overflow: hidden;
+}
+
+.overlay h2{
+	color:#fff;
+	font-weight:300;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+	height:100%;
+	cursor:pointer;
+}
+
+@media screen and (max-width:1000px){
+	.contenedor-imagenes{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width:700px){
+	.contenedor-imagenes{
+		width: 90%;
+	}
+	.contenedor-imagenes .imagen{
+		width:48%;
+	}
+}
+
+@media screen and (max-width:450px){
+	h1{
+		font-size:22px
+	}
+	.contenedor-imagenes{
+		width: 98%;
+	}
+	.contenedor-imagenes .imagen{
+		width:80%;
+	}
+}
+
+#cuadroOpiniones{
+	margin-bottom: 50px;	
+    display: flex;
+	justify-content: center;
+}
+
+#cuadroOpiniones h2{
+	text-align: center;
+	margin:20px 0 15px 0;
+	color: rgb(0, 0, 0);
+	font-family: 'Roboto Slab', serif;
+}
+
+#caja1{
+	/*background-color: #414833;*/
+	background: url("../images/FotoFondoHome.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 50px;
+	
+    display: flex;
+	justify-content: center;
+}
+
+#cajaTextoPrincipal{
+
+    width: 800px;
+    position: relative;
+	/*margin: 0px auto;*/
+	padding-top: 150px;
+	padding-right: 70px;
+	padding-bottom: 100px;
+	margin-left: 40px;
+}
+
+#cajaTextoPrincipal p{
+    color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+#cajaTextoSecundario{
+
+    width: 1000px;
+    position: relative;
+    padding: 5em;
+	/*margin: 0px auto;*/
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#cajaTextoSecundario p{
+    color: black;
+	font-family: 'Roboto Slab', serif;
+}
+
+#cajaLogo{
+	/*margin: 0px auto;*/
+	padding-top: 120px;
+	padding-left: 70px;
+	padding-bottom: 100px;
+	margin-right: 40px;
+}
+
+
+#cajaLogo img{
+	height: 500px;
+}
+
+
+#cajaVideo{
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#cajaTestimonios{
+	background: url("../images/FotoFondoTestimonios.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom: 100px;
+}
+
+
+#cajaTestimonios h1{
+    color: white;
+	font-family: 'Merriweather', serif;
+}
+
+#cajaTestimonios h3{
+    color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+#cajaTestimonios td{
+    color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+#Testimonios{
+	width: 70%;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#CuadroTestimonio{
+    display: inline-block;
+    margin: 20px 30px;
+    border: 1px solid #fff;
+    width: 400px;
+    position: relative;
+    padding: 2em;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+#CuadroTestimonio p{
+    padding:0;
+	margin:0;
+	font-size:20px;
+}
+
+#cajaGaleria{
+	background: url("../images/imagenFondoGaleria.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 600px;
+}
+
+#cajaDetalleImagen{
+	background: url("../images/imagenFondoGaleria.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 200px;
+
+}
+
+#textoLink{
+    color: white;
+	font-family: 'Roboto Slab', serif; 
+}
+
+#textoLinkNegro{
+    color: black;
+	font-family: 'Roboto Slab', serif; 
+}
+
+.lineanegra{
+	border-top: 5px solid #000000;
+	margin-bottom:150px ;
+}
+
+
+#cajaArticulos{
+	background: #cac0b8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 200px;
+}
+
+#cajaArticulos h1{
+	text-align: center;
+	margin:20px 0 15px 0;
+	font-weight:300;
+	color: rgb(0, 0, 0);
+	font-family: 'Merriweather', serif;
+}
+
+#cajaArticulos h2{
+	text-align: center;
+	margin:20px 0 15px 0;
+	color: rgb(255, 255, 255);
+	font-family: 'Roboto Slab', serif;
+}
+
+.Videos h1{
+	text-align: center;
+	margin:20px 0 15px 0;
+	font-weight:300;
+	color: rgb(0, 0, 0);
+	font-family: 'Merriweather', serif;
+}
+
+.Articulos{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 150px;
+} 
+
+.CuadroArticulo{
+    display: inline-block;
+    margin: 20px 10px;
+    border: 3px solid rgb(255, 255, 255);
+    width: 400px;
+    position: relative;
+    padding: 2em;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	height: 600px;
+
+}
+
+#CuadroArticuloNum1{
+	background: url("../Articulos/Imagenes/1bn.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#CuadroArticuloNum2{
+	background: url("../Articulos/Imagenes/2bn.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+
+.Articulos{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom: 150px;
+} 
+
+#cajaVideo{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#DatosActuales{
+	background: #b9cab8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 150px;
+	padding-bottom: 200px;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+#cuadroDatosActuales{
+    display: inline-block;
+    margin: 20px 10px;
+    width: 1500px;
+    position: relative;
+    padding: 2em;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	justify-content: center;
+	text-align: center;
+}	
+
+#DatosActuales h1{
+	text-align: center;
+	margin:20px 0 15px 0;
+	font-weight:300;
+	color: rgb(0, 0, 0);
+	font-family: 'Merriweather', serif;
+}
+
+#DatosActuales h2{
+	text-align: center;
+	margin:20px 0 15px 0;
+	color: rgb(0, 0, 0);
+	font-family: 'Roboto Slab', serif;
+}
+
+
+#confirmacionForm{
+
+	padding-top: 100px;
+	padding-bottom: 350px;
+
+}

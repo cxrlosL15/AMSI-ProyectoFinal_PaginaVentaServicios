@@ -1,0 +1,128 @@
+#frmPersonalizarCompra{
+	margin: 0;	
+}
+
+#frmPersonalizarCompra input{
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Merriweather', 'Roboto Slab', serif;
+    color: #050505;
+	font-size:20px;
+	margin: 5px 0;
+	text-align:right;
+}
+#frmPersonalizarCompra input[type="submit"] {
+    width: 100%;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px 0;
+    margin: 5px 0;
+    font-size: 15px;
+	text-align:center;
+}
+
+#frmConfirmar{
+	width: 300%;
+	text-align: center;
+	position: relative;
+}
+
+#frmConfirmar fieldset {
+	background: white;
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 200%;
+	margin: 5% 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#frmConfirmar fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#frmConfirmar input,select{
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	color:  #757575;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+/*buttons*/
+#frmConfirmar .action-button, #frmConfirmar input[type=submit] {
+	width: 100%;
+	background: url("../../images/botonfondorojo.jpg");
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	font-size:30px;
+}
+#frmConfirmar input[type=button] {
+	width: 30%;
+	background: white;
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	font-size:20px;
+	line-height: 0;
+}
+#frmConfirmar .action-button:hover, form .action-button:focus{
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #4c6b94;
+}
+/*headings*/
+/*#frmConfirmar .fs-title {
+	color: #000000;
+	margin-bottom: 10px;
+}*/
+#frmConfirmar .fs-subtitle {
+	text-align:center;
+	font-weight: normal;
+	font-size: 20px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+
+.button{
+	width: 10%;
+	background: #C39D91;
+	font-family: 'Poppins', sans-serif;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	font-size:20px;
+}
+
+#contra {
+	display: flex;
+	flex-direction: column;
+	gap: 10px; /* Espacio entre los elementos verticales */
+	max-width: 300px;
+}
+.checkbox-container {
+	display: flex;
+	align-items: center;
+	gap: 5px; /* Espacio entre el checkbox y el texto */
+}
+

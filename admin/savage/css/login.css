@@ -1,0 +1,62 @@
+/*Estilo de Inicio de Sesión*/
+
+* body {
+  background: url("../images/papeleria.jpg") no-repeat fixed center #67EBFA;
+  background-size: cover;
+  background-size: 100% 100%;/*vertical horizontal*/
+  font-family: "Lucida Handwriting", Georgia, Helvetica, Arial;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.formulario {
+	background-color:#FAA99D;
+	margin: 10px;
+	margin-top: 50px;
+	width:60%;
+	height: 56%;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+
+.title{
+	padding: 10px;
+	font-size: 40px;
+}
+
+p {
+	color: black;
+	background: #67EBFA;
+	font-weight: bold;
+	font-size: 30px;
+	width: 50%;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/*Cajas de texto*/
+input[type=text],input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: Georgia, Verdana, "Courier New", monospace;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #67EBFA;
+}
+input[type=text]:hover  { /*cursor pasa por encima*/
+  background-color: #67EBFA;
+}
+
+input[type=submit] {
+  background-color: #CE97FB;
+  border:2px solid #B28DFF;
+  color: black; /*color de letra*/
+  padding: 16px 32px;
+  margin: 10px 2px;
+  cursor: pointer;
+  width:90%;
+  font-family: Georgia, Verdana, "Courier New";
+  font-size: 20px;
+}
+

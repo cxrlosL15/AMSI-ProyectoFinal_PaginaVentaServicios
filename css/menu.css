@@ -1,0 +1,167 @@
+#header{
+	padding-bottom: 30px;
+	color:darkgrey;
+}
+
+#menu{	
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #b2babb;
+
+}
+
+#datosClientes{
+	font-family: 'Merriweather', 'Roboto Slab', 'Zen Kaku Gothic Antique', serif;	
+	margin: 10px;
+	font-size:15px;
+	float:center;
+}
+
+/*Contenedor con comentarios*/
+#contenedor{
+	margin: 0 auto;
+	max-width: 1335px;
+	align-content: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+/*
+#contenedor{
+	margin: 0 auto;
+	background-color: #fff;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+*/
+#menu{	
+	width: 100%;
+	text-align: center;
+	padding-bottom:50px;
+}
+
+#menu ul {	
+	display: inline-block;
+	list-style:none;
+	margin: auto;
+	background-color: #ffffff;
+	font-weight: 400;
+}
+
+#menu ul a {
+	display:block;	
+	text-decoration: none;
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	font-size: 1em;
+	padding-top: 7px;
+	color:#050505;
+}
+
+#menu ul li {
+	display:block;
+	position:relative;
+	text-decoration: none;
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	font-size: 0.9em;
+	float: left;
+	padding-top: 8px;
+	padding-left: 40px;
+	padding-right:40px;
+	color:#050505;
+}
+
+#menu ul li:current-menu-item
+{	
+	background:#ffffff;
+}
+
+#menu ul a:hover
+{	
+	background:#ffffff;
+	color:#050505;
+}
+
+#menu ul li:hover
+{	
+	background:#ffffff;
+	color:#050505;
+}
+
+#menu ul ul
+{	
+	display:none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #ffffff;
+	padding: 0;
+	padding-bottom: 20px;
+	font-size: 0.9em;
+}
+
+#menu ul ul ul
+{	
+	top:0;
+}
+
+#menu ul li:hover > ul
+{	
+	display:block;
+}
+
+#logo img{
+	float:left;
+	padding-left: 50px;
+	height: 150px;
+	margin: 1px;
+}
+
+/*Seccion comentada*/
+/*#casa img{
+	float:right;
+	padding-top: 50px;
+	padding-right: 50px;
+	margin: 1px;
+}*/
+
+#casa img{
+
+    margin: 1px;
+    float: right;
+	padding-right: 70px;
+	padding-top: 50px;
+}
+
+.textbox{
+	padding: 15px;
+	text-align: justify;
+	width:  800px;
+	color: #fff;
+}
+
+#bienvenido img{
+	width: 80%;
+	height:40px;
+	margin: 0px;
+	float:left;
+}
+
+#fotosRedesSociales{
+	width:100%;
+	bottom:0px;
+}
+
+#fotosRedesSociales img{
+    height: 50px;
+	width: 50px;
+    margin: 1px;
+    float: center;
+	padding: 10px;
+}
+
+#Contador{
+    float: right;
+	padding: 10px;
+}
