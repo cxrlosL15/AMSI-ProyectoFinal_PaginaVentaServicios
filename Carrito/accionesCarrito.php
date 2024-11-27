@@ -1,19 +1,19 @@
 <?php
-$IDArticulo = $_REQUEST['IDArticulo'];
+$Id_Servicios = $_REQUEST['Id_Servicios'];
 $accion = $_REQUEST['accion'];
 
-if(isset($_SESSION['carrito'][$IDArticulo])){
+if(isset($_SESSION['carrito'][$Id_Servicios])){
 	if($accion=='addCarrito')
-		$_SESSION['carrito'][$IDArticulo]['cantidad']++;//agregar un Articulo
+		$_SESSION['carrito'][$Id_Servicios]['Cantidad']++;//agregar un Articulo
 	else{
-		$_SESSION['carrito'][$IDArticulo]['cantidad']--;//eliminar un Articulo
+		$_SESSION['carrito'][$Id_Servicios]['Cantidad']--;//eliminar un Articulo
 		
-		if($_SESSION['carrito'][$IDArticulo]['cantidad']==0)
-			unset($_SESSION['carrito'][$IDArticulo]);//eliminar el Articulo cuando la cantidad es igual a cero
+		if($_SESSION['carrito'][$Id_Servicios]['Cantidad']==0)
+			unset($_SESSION['carrito'][$Id_Servicios]);//eliminar el Articulo cuando la cantidad es igual a cero
 	}
 }else{
-	$_SESSION['carrito'][$IDArticulo] = array(
-				'cantidad' => 1,
+	$_SESSION['carrito'][$Id_Servicios] = array(
+				'Cantidad' => 1,
 				'Descuento' => 0
 				);	
 	echo 'OK';

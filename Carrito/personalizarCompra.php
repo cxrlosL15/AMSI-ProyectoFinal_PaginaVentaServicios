@@ -23,16 +23,16 @@
 			$IVA = 0;
 			$cantArticulos = 0;
 			$Descuento = 0;
-			foreach($_SESSION['carrito'] as $IDArticulo => $campos)
+			foreach($_SESSION['carrito'] as $Id_Servicios => $campos)
 			{
-				$datosArticulo=getDetalleArticulo($IDArticulo);				
+				$datosArticulo=getDetalleArticulo($Id_Servicios);				
 				$cantArticulos += $campos['cantidad'];
-				$Descuento = $_SESSION['carrito'][$IDArticulo]['Descuento'];
+				$Descuento = $_SESSION['carrito'][$Id_Servicios]['Descuento'];
 				$Importe = $datosArticulo['PrecioActual']*$campos['cantidad'] - $Descuento;
 				$subTotal += $Importe;
 			?>						
 					<tr>
-						<td><?=$datosArticulo['IDArticulo']?></td>
+						<td><?=$datosArticulo['Id_Servicios']?></td>
 						<td><?=$datosArticulo['NameArticulo']?></td>
 						<td><?=$datosArticulo['Marca']?></td>
 						<td class="precios">$ <?=number_format($datosArticulo['PrecioActual'], 2, '.', ',')?></td>

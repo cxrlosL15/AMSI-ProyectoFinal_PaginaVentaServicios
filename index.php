@@ -83,4 +83,5 @@ require_once('configuracionCliente.php');
 	}
 	
 	include_once(FOOTERCLIENTE);
+	
 ?>

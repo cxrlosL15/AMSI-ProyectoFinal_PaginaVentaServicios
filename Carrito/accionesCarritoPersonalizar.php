@@ -1,13 +1,13 @@
 <?php
 require_once('../configuracionCliente.php');
-$IDArticulo = $_REQUEST['IDArticulo'];
+$Id_Servicios = $_REQUEST['Id_Servicios'];
 $accion = $_REQUEST['accion'];
 //print_r($_REQUEST);
-if(isset($_SESSION['carrito'][$IDArticulo])){ 
+if(isset($_SESSION['carrito'][$Id_Servicios])){ 
 	if($accion=='procesarPago')
 	{
-		$_SESSION['carrito'][$IDArticulo]['Descuento'] = $_REQUEST['Descuento'];
-		$_SESSION['carrito'][$IDArticulo]['cantidad'] = $_REQUEST['cantidad'];	
+		$_SESSION['carrito'][$Id_Servicios]['Descuento'] = $_REQUEST['Descuento'];
+		$_SESSION['carrito'][$Id_Servicios]['Cantidad'] = $_REQUEST['Cantidad'];	
 		$ruta = ROOTURL."?accion=personalizarCompra";		
 	}
 	

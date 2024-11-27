@@ -14,13 +14,13 @@ table caption {
 }
 
 table tr{
-	background-color: #FDFEFE;
+	background-color: #136F26;
 	border: 1px solid #ddd;
 	padding: 0.35em;
 }
 
 table th{
-	background: url("../../images/botonfondo.jpg");
+	background: url("../images/botonfondo.jpg");
 	color:#fff;
 	padding: 0.35em;
 }
@@ -50,4 +50,13 @@ table td img{
 #imagenMembresiaTabla{
 	max-width: 250px;
 	height: 100%;
+  }
+  #monto
+  {
+	font-family: 'Merriweather', 'Roboto Slab', serif;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ddd;
+
   }

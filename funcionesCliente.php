@@ -37,32 +37,40 @@ function getListServicios(){
 function getDetalleServicio($Id_Servicios)
 {
 	include("MySqli_conexionDB.php");
-    $query = "SELECT Id_Servicios, Imagen, NombreServicio, Descripccion, Precio, PeriodoTiempo, Estado, Cantidad FROM servicios WHERE Id_Servicios='$Id_Servicios'";
+    error_log("Buscando detalles del servicio con ID: $Id_Servicios"); // Log del ID buscado
+
+    $query = "SELECT Id_Servicios, Imagen, NombreServicio, Descripccion, Precio, PeriodoTiempo, Estado, Cantidad 
+              FROM servicios 
+              WHERE Id_Servicios='$Id_Servicios'";
+
     if (!$result = mysqli_query($conexion, $query)) {
+        error_log("Error en la consulta: " . mysqli_error($conexion)); // Log del error
         exit(mysqli_error($conexion));
     }
-    $lista = array();
 
     if (mysqli_num_rows($result) > 0) {
-        while ($renglon = mysqli_fetch_assoc($result)) {
-            if ($renglon['Imagen'] == "")
-                $foto = IMAGES_ORIGEN . 'Servicios/fotos/0.png';
-            else
-                $foto = IMAGES_ORIGEN . 'Servicios/fotos/' . $renglon['Imagen'];
+        $renglon = mysqli_fetch_assoc($result);
 
-            $lista[] = array(
-                'Id_Servicios' => $renglon['Id_Servicios'],
-                'mostrarFoto' => $foto,
-                'Imagen' => $renglon['Imagen'],
-                'NombreServicio' => $renglon['NombreServicio'],
-                'Descripccion' => $renglon['Descripccion'],
-                'Precio' => $renglon['Precio'],
-                'PeriodoTiempo' => $renglon['PeriodoTiempo'],
-                'Cantidad' => $renglon['Cantidad']
-            );
-        }
+        $foto = $renglon['Imagen'] == "" 
+                ? IMAGES_ORIGEN . 'Servicios/fotos/0.png' 
+                : IMAGES_ORIGEN . 'Servicios/fotos/' . $renglon['Imagen'];
+
+        error_log("Resultado encontrado: " . print_r($renglon, true)); // Log del resultado
+
+        return array(
+            'Id_Servicios' => $renglon['Id_Servicios'],
+            'mostrarFoto' => $foto,
+            'Imagen' => $renglon['Imagen'],
+            'NombreServicio' => $renglon['NombreServicio'],
+            'Descripccion' => $renglon['Descripccion'],
+            'Precio' => $renglon['Precio'],
+            'PeriodoTiempo' => $renglon['PeriodoTiempo'],
+            'Cantidad' => $renglon['Cantidad']
+        );
     }
-    return $lista;
+
+    error_log("No se encontró el servicio con ID: $Id_Servicios"); // Log si no hay resultados
+    return null; // Devuelve null si no hay resultados
 }
 //-------------------------------------------------- FIN FUNCIONES ARTICULOS --------------------------------------------------//
 

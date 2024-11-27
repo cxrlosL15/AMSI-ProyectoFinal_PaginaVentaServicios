@@ -23,16 +23,16 @@
 		
 
 		 
-		<script src="<?=JS?>fechaActual.js"></script>
+		<script src="js/fechaActual.js"></script>
 	</head>
 	
   
 	
-	<body onload="horaActual()">
+	<body >
 		<?php	
 		
 		
-			var_dump($_SESSION);
+		
 			$opcion=""; $accion="";
 			
 			
@@ -109,7 +109,7 @@
 					$cantidad = 0; 
 					if(isset($_SESSION['carrito'])){
 						foreach($_SESSION['carrito'] as $Id_Servicios => $campos)
-							$cantidad += $campos['cantidad'];
+							$cantidad += $campos['Cantidad'];
 						
 						if (count($_SESSION['carrito'])==0)
 							unset($_SESSION['carrito']);
