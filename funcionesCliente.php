@@ -72,7 +72,7 @@ function getDatosClienteLogin($IDCliente){
 	include("MySqli_conexionDB.php");
 	$nombre = "";
 	
-	$query = "SELECT IDCliente, APaterno, AMaterno, Nombre, Estado FROM clientes WHERE IDCliente='$IDCliente'";
+	$query = "SELECT Id_Cliente, APaterno, AMaterno, Nombre, Estado FROM clientes WHERE Id_Cliente='$IDCliente'";
     if (!$result = mysqli_query($conexion, $query)) {
         exit(mysqli_error($conexion));
     }
