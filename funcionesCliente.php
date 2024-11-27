@@ -170,7 +170,7 @@ function getListMisComprasDetalle($IDVenta){
 function obtenerDatosCliente($IDCliente)
 {				
 		include('MySqli_conexiondb.php');
-		$query = "SELECT IDCliente, Foto, APaterno, AMaterno, Nombre, CorreoElectronico FROM clientes WHERE IDCliente=".$IDCliente;
+		$query = "SELECT Id_Cliente, Foto, APaterno, AMaterno, Nombre, CorreoElectronico FROM clientes WHERE Id_Cliente ='.$IDCliente'";
 		$result = mysqli_query($conexion,$query);
 		if(!$result)
 		{

@@ -26,11 +26,18 @@
 		<script src="<?=JS?>fechaActual.js"></script>
 	</head>
 	
+  
+	
 	<body onload="horaActual()">
 		<?php	
-
+		
+		
+			var_dump($_SESSION);
 			$opcion=""; $accion="";
+			
+			
 
+			
 			if(isset($_GET['accion']))
 			{
 				$menuactivo="current-menu-item"; 

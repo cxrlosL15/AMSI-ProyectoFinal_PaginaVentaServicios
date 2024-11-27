@@ -39,7 +39,7 @@
 			if($DBcontraseña==$Contrasena){				
 				
 				echo "ok"; // log in
-				$_SESSION['cliente_session'] = $row['IDCliente'];
+				$_SESSION['cliente_session'] = $row['Id_Cliente'];
 				header("Location: ".ROOTURL);//regresa a la página principal
 			}
 			else{?>
